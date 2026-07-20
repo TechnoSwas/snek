@@ -26,7 +26,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
     public void actionPerformed(ActionEvent e) {
         if (!gameOver) {
             snake.move(); // Move the snake one step
-            // Check if the snake's head is on the food
+            // Check if the snake's head is on the food (Adds 1 to the score)
             if (snake.body.get(0)[0] == food.x && snake.body.get(0)[1] == food.y) {
                 snake.grow();
                 food.respawn();

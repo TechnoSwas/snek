@@ -93,5 +93,21 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
             gameScore = 0;
             gameOver = false;
         }
+        if (e.getKeyCode() == KeyEvent.VK_UP) {
+            snake.dirX = 0;
+            snake.dirY = -1;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+            snake.dirX = 0;
+            snake.dirY = 1;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            snake.dirX = 1;
+            snake.dirY = 0;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            snake.dirX = -1;
+            snake.dirY = 0;
+        }
     }
 }

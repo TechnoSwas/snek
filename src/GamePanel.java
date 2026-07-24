@@ -109,5 +109,10 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
             snake.dirX = -1;
             snake.dirY = 0;
         }
+        if (e.getKeyCode() == KeyEvent.VK_PAGE_UP) {
+            snake.dirX = 0;
+            snake.dirY = -1;
+
+        }
     }
 }
